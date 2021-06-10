@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <style>
+    .card{
+      border:none;
+      border-right: 2px solid red;
+      border-bottom: 2px solid blue;
+      /*border-left: 2px solid red;
+      border-top: 2px solid blue;*/
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .card-title{
+      border-bottom: 2px solid lightgrey;
+    }
+    .card:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)/*, 0 6px 20px 0 rgba(0, 0, 0, 0.19)*/;
+    }
+    img{
+      width:100%;
+    }
+    body{
+      background-color: lightyellow;
+    }
+    .row .btn:hover{
+      background-color: lime;
+      color : white;
+      width:100%;
+    }
+    .go-to-home{
+      border-bottom: 1px solid blue;
+      position: relative;
+      width:30%;
+      margin-top: 100px;
+      font-weight: bolder;
+    }
+    .news-detail{
+      background-color: lightblue;
+      height:40px;
+      font-weight: bolder;
+      color:blue;
+      line-height: 40px;
+      border-radius: 15px;
+    }
+    .header{
+      margin-top: 40px;
+      position: relative;
+    }
+    .signin{
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+    }
+    label{
+        width:100%;
+        border-bottom: 2px solid lightgrey;
+    }
+    .input{
+        width:100%;
+        border:none;
+        margin-bottom: 5%;
+        text-align: center;
+        border-radius: 20px;
+        border:1px solid lightgreen;
+    }
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+    
+    .out-coll{
+      padding: 0 1% 0 5%;
+      border-right: 2px solid grey;
+    }
+    .collapse{
+      padding-left: 50%;
+    }
+    .out{
+      font-size:small;
+    }
+
+    .submit{
+        border:none;
+        width:45%;
+        background-color: blue;
+        color:white;
+        font-weight: bolder;
+        border-radius: 40px;
+        height:35px;
+    }
+
+    .signin-page{
+        padding:30px 0 40px 0;
+        border-radius: 40px;
+        border:1px solid red;
+    }
+
+
+
+@media only screen and (max-width: 1000px) {
+    .go-to-home{
+      border-bottom: 1px solid blue;
+      position: relative;
+      width:50%;
+      margin-top: 160px;
+      font-weight: bolder;
+    }
+}
+
+
+  </style>
+</head>
+<body class="px-3"> 
+
+
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top px-3">
+    <a class="navbar-brand" href="home.html">Navbar</a>
+
+      <a class="navbar-brand out out-coll" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>  signin</a><p></p>
+      <a class="navbar-brand out out-coll-one" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> cart ( 10 )</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
+
+
+
+
+
+
+  <div class="container text-center go-to-home">
+    <p>SIGN IN HERE</p>
+  </div>
+     <br>
+
+
+     <div class="container signin-page">
+
+        <div class="signin">
+            <form>
+                <label><input type="text" class="input" placeholder="enter your usrname here"></label>  <br>
+                <p></p>
+                <label><input type="text" class="input" placeholder="enter your email id here"></label>
+                <p></p>   <br>
+                <a href="$" >dont have an account</a>
+                <input type="submit" class="float-right submit" value="sign in">
+            </form>
+        </div>
+
+    
+      </div>
+
+
+</body>
+</html>
